@@ -8,13 +8,14 @@ public class BarChart {
 
         String asterisk = "";
 
-       for(int count = 1; count <= 5; count++){
+       for(int row = 1; row <= 5; row++){
            System.out.println("Enter a number between 1 and 30:");
             int inputs = userInput.nextInt();
             if(inputs > 30){
-                inputs = 30;
+                System.out.println("Invalid number");
+                return;
             }
-            for(int j = 1; j <= inputs; j++){
+            for(int column = 1; column <= inputs; column++){
                 asterisk = asterisk + "*";
             }
 

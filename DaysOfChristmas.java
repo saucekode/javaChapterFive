@@ -2,12 +2,12 @@ package Chapter5;
 
 public class DaysOfChristmas {
     public static void main(String[] args) {
-        int verses = 12;
+        final int VERSE_LENGTH = 12;
         String lyricAccessory = "my true love sent to me:";
         String day = "";
         String verse = "";
 
-        for(int counter = 1; counter <= verses; counter++){
+        for(int counter = 1; counter <= VERSE_LENGTH; counter++){
             System.out.println("  ");
             switch(counter){
                 case 1:
